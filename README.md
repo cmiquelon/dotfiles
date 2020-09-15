@@ -3,7 +3,6 @@ My dotfiles, kept in a git bare repository, as explained in this tutorial: https
 
 ## Install
 ```sh
-echo "alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.zshrc
 echo ".dotfiles" >> .gitignore
 git clone --bare https://github.com/cmiquelon/dotfiles.git $HOME/.dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
