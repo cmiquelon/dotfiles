@@ -20,3 +20,4 @@ dotfiles add .zshrc
 dotfiles commit -m "Add .zshrc"
 dotfiles push
 ```
+`dot` is an alias for `dotfiles`.
