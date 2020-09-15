@@ -9,6 +9,8 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dotfiles checkout
 # remove or backup existing dotfiles, then 'dotfiles checkout' again if needed
 dotfiles config --local status.showUntrackedFiles no
+dotfiles submodule init
+dotfiles submodule update
 ```
 
 ## Keep up to date
