@@ -1,3 +1,24 @@
 [submodule ".vim/pack/tpope/start/sensible"]
 	path = .vim/pack/tpope/start/sensible
 	url = https://tpope.io/vim/sensible.git
+[submodule ".vim/pack/tpope/start/commentary"]
+	path = .vim/pack/tpope/start/commentary
+	url = https://tpope.io/vim/commentary.git
+[submodule ".vim/pack/dense-analysis/start/ale"]
+	path = .vim/pack/dense-analysis/start/ale
+	url = https://github.com/dense-analysis/ale.git
+[submodule ".vim/pack/jiangmiao/start/auto-pairs"]
+	path = .vim/pack/jiangmiao/start/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs
+[submodule ".vim/pack/tpope/start/vim-surround"]
+	path = .vim/pack/tpope/start/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule ".vim/pack/sheerun/start/vim-polyglot"]
+	path = .vim/pack/sheerun/start/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot
+[submodule ".vim/pack/justinmk/start/vim-sneak"]
+	path = .vim/pack/justinmk/start/vim-sneak
+	url = https://github.com/justinmk/vim-sneak
+[submodule "/Users/charles/.emacs.d"]
+	path = /Users/charles/.emacs.d
+	url = https://github.com/hlissner/doom-emacs
