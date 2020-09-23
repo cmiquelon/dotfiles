@@ -3,21 +3,33 @@ alias dotfiles='/usr/bin/git --git-dir=/Users/charles/.dotfiles/ --work-tree=/Us
 alias dot=dotfiles
 
 # use GNU instead of BSD
-for bindir in /usr/local/opt/***/gnubin; export PATH=$bindir:$PATH;
+# for bindir in /usr/local/opt/***/gnubin; export PATH=$bindir:$PATH;
+#
 
-# use homebrewed tools
-export PATH="/usr/local/bin:$PATH"
-
-# add doom to path
-export PATH="$HOME/.emacs.d/bin:$PATH"
+# path
+export PATH="$HOME/bin:/usr/local/bin:$HOME/.emacs.d/bin:$HOME/.cargo/bin:$PATH"
 
 # functions
-source $HOME/.functions/*
+for file in $HOME/.functions/*; do
+	source "$file"
+done
 
 # pure prompt
-autoload -U promptinit; promptinit
+autoload -U promptinit
+promptinit
 prompt pure
+
+# zsh-autosuggestions
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# autojump
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+# auto-completion
+autoload -U compinit
+compinit
 
 # zsh-syntax-highlighting
 # KEEP AT THE END
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH="/usr/local/opt/llvm/bin:$PATH"
