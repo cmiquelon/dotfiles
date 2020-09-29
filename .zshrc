@@ -26,8 +26,12 @@ source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # auto-completion
-autoload -U compinit
-compinit
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
 
 # zsh-syntax-highlighting
 # KEEP AT THE END

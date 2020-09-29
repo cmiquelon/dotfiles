@@ -19,6 +19,6 @@
 [submodule ".vim/pack/justinmk/start/vim-sneak"]
 	path = .vim/pack/justinmk/start/vim-sneak
 	url = https://github.com/justinmk/vim-sneak
-[submodule "/Users/charles/.emacs.d"]
-	path = /Users/charles/.emacs.d
+[submodule ".emacs.d"]
+	path = .emacs.d
 	url = https://github.com/hlissner/doom-emacs
