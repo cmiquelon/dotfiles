@@ -15,5 +15,8 @@ $dotfiles submodule update
 # avoid zsh compinit warning
 chmod -R go-w "$(brew --prefix)/share"
 
-# source .zshrc
+# load zsh config
 source .zshrc
+
+# login to github
+gh auth login
