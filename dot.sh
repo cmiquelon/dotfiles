@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # avoid showing everthing in $HOME with git status
 dotfiles config --local status.showUntrackedFiles no
 
