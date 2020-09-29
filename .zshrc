@@ -1,13 +1,11 @@
 # dotfiles source control
-alias dotfiles='/usr/bin/git --git-dir=/Users/charles/.dotfiles/ --work-tree=/Users/charles'
+alias dotfiles='git --git-dir=/Users/charles/.dotfiles/ --work-tree=/Users/charles'
 alias dot=dotfiles
 
-# use GNU instead of BSD
-# for bindir in /usr/local/opt/***/gnubin; export PATH=$bindir:$PATH;
-#
-
 # path
-export PATH="$HOME/bin:/usr/local/bin:$HOME/.emacs.d/bin:$HOME/.cargo/bin:$PATH"
+PATH="$HOME/.cargo/bin:/usr/local/opt/llvm/bin:$PATH"
+PATH="/usr/local/bin:$HOME/.emacs.d/bin$PATH"
+export PATH
 
 # functions
 for file in $HOME/.functions/*; do
@@ -22,9 +20,6 @@ prompt pure
 # zsh-autosuggestions
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# autojump
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
-
 # auto-completion
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
@@ -34,6 +29,4 @@ if type brew &>/dev/null; then
 fi
 
 # zsh-syntax-highlighting
-# KEEP AT THE END
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-export PATH="/usr/local/opt/llvm/bin:$PATH"
