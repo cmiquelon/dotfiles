@@ -19,4 +19,4 @@ chmod -R go-w "$(brew --prefix)/share"
 source .zshrc
 
 # login to github
-gh auth login
+gh auth login --with-token < .ghtoken.txt
