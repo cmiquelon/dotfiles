@@ -6,6 +6,7 @@ brew "gh"
 brew "tree"
 brew "zsh-syntax-highlighting"
 brew "emacs-plus"
+brew "git"
 
 cask "firefox"
 cask "alacritty"
