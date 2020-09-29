@@ -27,7 +27,7 @@ ln -s /usr/local/opt/emacs-plus@27/Emacs.app /Applications
 source .zshrc
 
 # login to github
-gh auth login --with-token < ghtoken.txt
+gh auth login --with-token <ghtoken.txt
 
 # install doom emacs
 doom install

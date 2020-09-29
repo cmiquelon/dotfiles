@@ -4,7 +4,7 @@ alias dot=dotfiles
 
 # path
 PATH="$HOME/.cargo/bin:/usr/local/opt/llvm/bin:$PATH"
-PATH="/usr/local/bin:$HOME/.emacs.d/bin$PATH"
+PATH="/usr/local/bin:$HOME/.emacs.d/bin:$PATH"
 export PATH
 
 # functions
