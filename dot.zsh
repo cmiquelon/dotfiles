@@ -31,3 +31,17 @@ gh auth login --with-token <ghtoken.txt
 
 # install doom emacs
 doom install
+
+# nighthook
+sudo cp cmiquelon.nighthook.plist /Library/LaunchAgents/cmiquelon.nighthook.plist
+
+# macos setup
+defaults write com.apple.dock autohide -bool true
+
+# rectangle setup
+defaults write com.knollsoft.Rectangle gapSize -float 10
+defaults write com.knollsoft.Rectangle snapEdgeMarginTop -int 10
+defaults write com.knollsoft.Rectangle snapEdgeMarginBottom -int 10
+defaults write com.knollsoft.Rectangle snapEdgeMarginLeft -int 10
+defaults write com.knollsoft.Rectangle snapEdgeMarginRight -int 10
+defaults read-type com.knollsoft.Rectangle launchOnLogin -bool true

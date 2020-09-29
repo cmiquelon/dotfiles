@@ -1,0 +1,28 @@
+#!/bin/bash
+if defaults read -g AppleInterfaceStyle &>/dev/null ; then
+    MODE="dark"
+else
+    MODE="light"
+fi
+
+emacsSwitchTheme () {
+    if pgrep -q Emacs; then
+        if [[  $MODE == "dark"  ]]; then
+            emacsclient --eval "(load-theme 'doom-nord 1)"
+        elif [[  $MODE == "light"  ]]; then
+            emacsclient --eval "(load-theme 'doom-nord-light 1)"
+        fi
+    fi
+}
+
+alacrittySwitchTheme() {
+    DIR=/Users/charles/
+    if [[  $MODE == "dark"  ]]; then
+        cp -f $DIR/.alacritty-dark.yml $DIR/.alacritty.yml
+    elif [[  $MODE == "light"  ]]; then
+        cp -f $DIR/.alacritty-light.yml $DIR/.alacritty.yml
+    fi
+}
+
+emacsSwitchTheme $@
+alacrittySwitchTheme $@
