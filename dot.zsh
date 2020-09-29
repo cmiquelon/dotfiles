@@ -18,6 +18,8 @@ chmod -R go-w "$(brew --prefix)/share"
 # install dependencies
 brew bundle -v
 
+ln -s /usr/local/opt/emacs-plus@27/Emacs.app /Applications
+
 # install prompt
 /usr/local/bin/npm install --global pure-prompt
 
