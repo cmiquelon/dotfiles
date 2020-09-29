@@ -1,3 +1,5 @@
+tap "d12frosted/emacs-plus"
+
 brew "zsh"
 brew "zsh-autosuggestions"
 brew "gh"
