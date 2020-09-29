@@ -15,6 +15,12 @@ dotfiles submodule update
 # avoid zsh compinit warning
 chmod -R go-w "$(brew --prefix)/share"
 
+# install dependencies
+brew bundle -v
+
+# install prompt
+npm install --global pure-prompt
+
 # load zsh config
 source .zshrc
 
