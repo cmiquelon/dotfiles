@@ -162,64 +162,36 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-# Copyright (c) 2017-present Arctic Ice Studio <development@arcticicestudio.com>
-# Copyright (c) 2017-present Sven Greb <code@svengreb.de>
-
-# Project:    Nord Alacritty
-# Version:    0.1.0
-# Repository: https://github.com/arcticicestudio/nord-alacritty
-# License:    MIT
-# References:
-#   https://github.com/alacritty/alacritty
-
+# Colors (One Light)
 colors:
+  # Default colors
   primary:
-    background: '#E5E9F0' # bg
-    foreground: '#60728C' # base7
-    dim_foreground: '#a5abb6'
-  cursor:
-    text: '#E5E9F0' #bg
-    cursor: '#60728C' # base7
-  vi_mode_cursor:
-    text: '#E5E9F0' #bg
-    cursor: '#60728C' #base7
-  selection:
-    text: CellForeground
-    background: '#AEBACF' #base5
-  search:
-    matches:
-      foreground: CellBackground
-      background: '#398EAC' #cyan
-    bar:
-      background: '#B8C5DB' #base4
-      foreground: '#60728C' #base7
+    foreground: '#282c34'
+    background: '#ffffff'
+
+  # Normal colors
   normal:
-    black: '#3b4252'
-    red: '#99324B' #red
-    green: '#4F894C' #green
-    yellow: '#9A7500' #yellow
-    blue: '#3B6EA8' #blue
-    magenta: '#97365B' #magenta
-    cyan: '#398EAC' #cyan
-    white: '#2E3440' #fg-alt
+    # NOTE: Use '#131613' for the `black` color if you'd like to see
+    # black text on the background.
+    black:   '#282c34'
+    red:     '#e06c75'
+    green:   '#98c379'
+    yellow:  '#d19a66'
+    blue:    '#61afef'
+    magenta: '#c678dd'
+    cyan:    '#56b6c2'
+    white:   '#abb2bf'
+
+  # Bright colors
   bright:
-    black: '#AEBACF' #base5
-    red: '#99324B' #red
-    green: '#4F894C' #green
-    yellow: '#9A7500' #yellow
-    blue: '#3B6EA8' #blue
-    magenta: '#97365B' #magenta
-    cyan: '#29838D' #teal
-    white: '#3B4252' #fg
-  dim:
-    black: '#373e4d'
-    red: '#94545d'
-    green: '#809575'
-    yellow: '#b29e75'
-    blue: '#68809a'
-    magenta: '#8c738c'
-    cyan: '#6d96a5'
-    white: '#aeb3bb'
+    black:   '#5c6370'
+    red:     '#e06c75'
+    green:   '#98c379'
+    yellow:  '#d19a66'
+    blue:    '#61afef'
+    magenta: '#c678dd'
+    cyan:    '#56b6c2'
+    white:   '#ffffff'
 
   # Indexed Colors
   #

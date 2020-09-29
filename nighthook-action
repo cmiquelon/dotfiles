@@ -8,9 +8,9 @@ fi
 emacsSwitchTheme () {
     if pgrep -q Emacs; then
         if [[  $MODE == "dark"  ]]; then
-            emacsclient --eval "(load-theme 'doom-nord 1)"
+            emacsclient --eval "(load-theme 'doom-one 1)"
         elif [[  $MODE == "light"  ]]; then
-            emacsclient --eval "(load-theme 'doom-nord-light 1)"
+            emacsclient --eval "(load-theme 'doom-one-light 1)"
         fi
     fi
 }
