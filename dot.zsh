@@ -19,10 +19,13 @@ chmod -R go-w "$(brew --prefix)/share"
 brew bundle -v
 
 # install prompt
-npm install --global pure-prompt
+/usr/local/bin/npm install --global pure-prompt
 
 # load zsh config
 source .zshrc
 
 # login to github
-gh auth login --with-token < .ghtoken.txt
+gh auth login --with-token < ghtoken.txt
+
+# install doom emacs
+doom install
