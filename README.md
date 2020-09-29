@@ -7,7 +7,7 @@ echo ".dotfiles" >> .gitignore
 git clone --bare https://github.com/cmiquelon/dotfiles.git $HOME/.dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dotfiles checkout -f
-./dot.sh
+./dot.zsh
 ```
 
 ## Keep up to date
