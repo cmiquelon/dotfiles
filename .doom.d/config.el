@@ -7,7 +7,7 @@
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets.
 (setq user-full-name "Charles Miquelon"
-      user-mail-address "charles@miquelon.dev")
+      user-mail-address "miqueloncharles@gmail.com")
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom. Here
 ;; are the three important ones:
@@ -25,9 +25,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme (if (= (shell-command "defaults read -g AppleInterfaceStyle &>/dev/null") 0)
-                      'doom-one
-                    'doom-one-light))
+(setq doom-theme 'doom-snazzy)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
@@ -55,9 +53,5 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
-;; UI
-(add-to-list 'default-frame-alist '(fullscreen . maximized))
-
 ;; C/C++
 (setq-default c-basic-offset 2)
-

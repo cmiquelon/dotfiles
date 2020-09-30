@@ -1,8 +1,14 @@
 [user]
 	name = Charles Miquelon
-	email = charles@miquelon.dev
+	email = miqueloncharles@gmail.com
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[core]
+	editor = vim
+[color]
+	ui = auto
+[push]
+	default = simple

@@ -4,5 +4,5 @@
 "syntax highlighting
 syntax on
 
-"nordish colors
-colorscheme nord
+"snazzy colors
+colorscheme snazzy

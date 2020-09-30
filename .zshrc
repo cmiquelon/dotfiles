@@ -32,8 +32,7 @@ fi
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # bat
-if defaults read -g AppleInterfaceStyle &>/dev/null; then
-export BAT_THEME="OneHalfDark"
-else
-  export BAT_THEME="OneHalfLight"
-fi
+export BAT_THEME="Sublime Snazzy"
+
+# fasd
+eval "$(fasd --init auto)"

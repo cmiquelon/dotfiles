@@ -27,13 +27,10 @@ ln -s /usr/local/opt/emacs-plus@27/Emacs.app /Applications
 source .zshrc
 
 # login to github
-gh auth login --with-token <ghtoken.txt
+gh auth login --with-token < ghtoken.txt
 
 # install doom emacs
 doom install
-
-# nighthook
-sudo cp cmiquelon.nighthook.plist /Library/LaunchAgents/cmiquelon.nighthook.plist
 
 # macos setup
 defaults write com.apple.dock autohide -bool true
@@ -45,3 +42,6 @@ defaults write com.knollsoft.Rectangle snapEdgeMarginBottom -int 10
 defaults write com.knollsoft.Rectangle snapEdgeMarginLeft -int 10
 defaults write com.knollsoft.Rectangle snapEdgeMarginRight -int 10
 defaults read-type com.knollsoft.Rectangle launchOnLogin -bool true
+
+# postgresql
+creatuser postgres
