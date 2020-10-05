@@ -22,3 +22,6 @@
 [submodule ".emacs.d"]
 	path = .emacs.d
 	url = https://github.com/hlissner/doom-emacs
+[submodule ".vim/pack/christoomey/vim-tmux-navigator"]
+	path = .vim/pack/christoomey/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator.git

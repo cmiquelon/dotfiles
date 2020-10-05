@@ -45,3 +45,15 @@ defaults read-type com.knollsoft.Rectangle launchOnLogin -bool true
 
 # postgresql
 creatuser postgres
+
+# yabai
+sudo yabai --install-sa
+brew services start yabai
+killall Dock
+
+# skhd
+brew services start skhd
+
+
+# rust
+curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh

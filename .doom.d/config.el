@@ -54,4 +54,4 @@
 ;; they are implemented.
 
 ;; C/C++
-(setq-default c-basic-offset 2)
+; (setq-default c-basic-offset 2)

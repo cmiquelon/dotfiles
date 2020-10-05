@@ -3,7 +3,7 @@ alias dotfiles='git --git-dir=/Users/charles/.dotfiles/ --work-tree=/Users/charl
 alias dot=dotfiles
 
 # path
-PATH="$HOME/.cargo/bin:/usr/local/opt/llvm/bin:$PATH"
+PATH="/Applications/Wireshark.app/Contents/MacOS/:$HOME/.cargo/bin:/usr/local/opt/llvm/bin:$PATH"
 PATH="/usr/local/bin:$HOME/.emacs.d/bin:/usr/local/opt/sqlite/bin:$PATH"
 export PATH
 
@@ -36,3 +36,4 @@ export BAT_THEME="Sublime Snazzy"
 
 # fasd
 eval "$(fasd --init auto)"
+if [ -e /Users/charles/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/charles/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

@@ -6,3 +6,6 @@ syntax on
 
 "snazzy colors
 colorscheme snazzy
+
+"map leader
+let mapleader = "\<Space>"
