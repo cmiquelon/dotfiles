@@ -19,9 +19,12 @@
 [submodule ".vim/pack/justinmk/start/vim-sneak"]
 	path = .vim/pack/justinmk/start/vim-sneak
 	url = https://github.com/justinmk/vim-sneak
-[submodule ".emacs.d"]
-	path = .emacs.d
-	url = https://github.com/hlissner/doom-emacs
 [submodule ".vim/pack/christoomey/vim-tmux-navigator"]
 	path = .vim/pack/christoomey/vim-tmux-navigator
 	url = https://github.com/christoomey/vim-tmux-navigator.git
+[submodule ".vim/pack/christoomey/start/vim-tmux-navigator"]
+	path = .vim/pack/christoomey/start/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator.git
+[submodule ".vim/pack/neovim/start/nvim-lspconfig"]
+	path = .vim/pack/neovim/start/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig.git

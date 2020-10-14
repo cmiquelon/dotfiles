@@ -6,6 +6,11 @@ syntax on
 
 "snazzy colors
 colorscheme snazzy
+set notgc
 
-"map leader
+"mappings
 let mapleader = "\<Space>"
+
+
+
+

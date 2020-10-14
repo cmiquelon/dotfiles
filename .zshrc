@@ -36,4 +36,6 @@ export BAT_THEME="Sublime Snazzy"
 
 # fasd
 eval "$(fasd --init auto)"
-if [ -e /Users/charles/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/charles/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+# colors
+export TERM=xterm-256color

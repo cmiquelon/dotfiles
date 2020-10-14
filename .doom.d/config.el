@@ -52,25 +52,11 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented
+(setq-default c-basic-offset 2)
 
-(use-package! alert
-  :config
-  (setq alert-default-style 'osx-notifier))
+;; org
+(add-hook 'org-mode-hook 'auto-fill-mode)
 
-(use-package! appt
-  :config
-  (setq appt-time-msg-list nil
-        appt-message-warning-time '1
-        appt-display-mode-line nil
-        appt-display-format 'window
-        appt-disp-window-function 'my-alert)
-  (appt-activate 1)
-  (org-agenda-to-appt)
-  (run-at-time "24:01" 3600 'org-agenda-to-appt)
-  (add-hook 'org-agenda-finalize-hook 'org-agenda-to-appt))
 
-(defun my-alert (min-to-app new-time msg)
-  (alert msg))
-
-;; C/C++
-;; (setq-default c-basic-offset 2)
+;; web
+(add-to-list 'auto-mode-alist '("\\.rain\\'" . web-mode))
